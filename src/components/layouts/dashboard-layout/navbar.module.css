@@ -1,0 +1,49 @@
+.navbarDashboard {
+  margin-bottom: 25px;
+  background: var(--blue-light);
+}
+
+.navitemDashboard {
+  position: relative;
+}
+
+.nav-item:hover .navbar--count {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.navlinkDashboard {
+  color: var(--white-color) !important;
+  line-height: 74px;
+  border-bottom: 4px solid transparent;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.navitemDashboard:hover .navLink {
+  background: var(--grey-dark);
+  border-bottom: 4px solid var(--green-light);
+}
+
+.navitemDashboard:hover .navbarCount {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.navlinkDashboard svg {
+  fill: var(--grey-light);
+  width: 25px;
+  height: 25px;
+}
+
+.navbarCount {
+  text-align: center;
+  line-height: 23px;
+  width: 25px;
+  height: 25px;
+  background: var(--g-plus-light);
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}

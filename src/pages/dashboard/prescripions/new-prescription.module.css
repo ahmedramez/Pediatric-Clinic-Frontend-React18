@@ -1,0 +1,25 @@
+.addTreatmentSection {
+  background-color: var(--blue-light);
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+.textBlueDark {
+  color: var(--blue-dark);
+}
+.prescriptionDetailsSection {
+  border-bottom: 1px solid var(--blue-dark);
+}
+.prescriptionDetailsHeader {
+  position: relative;
+  color: white;
+}
+.prescriptionDetailsCollapseButton {
+  left: 10%;
+  top: 16%;
+}
+.fileDataModalButton {
+  position: absolute;
+  left: 10%;
+  top: 21%;
+  fill: var( --g-plus-light);
+}

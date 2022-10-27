@@ -1,0 +1,55 @@
+.linkButton {
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    display: block;
+    width: 175px;
+    line-height: 50px;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+    cursor: pointer;
+    background: var(--g-plus-dark);
+    color: var(--white-color);
+    text-align: center;
+  }
+  
+.green {
+    background: var(--green-dark);
+    color: var(--white-color);
+}
+.linkButton.green:hover {
+  background: var(--green-light);
+  color: var(--white-color);
+}
+.red {
+    background: var(--g-plus-dark);
+    color: var(--white-color);
+}
+.linkButton.red:hover {
+  background: var(--g-plus-light);
+  color: var(--white-color);
+}
+.yellow {
+    background: var(--yellow);
+    color: var(--white-color);
+}
+.linkButton.yellow:hover {
+  background: var(--yellow-light);
+  color: var(--white-color);
+}
+.blue {
+    background: var(--fb-dark);
+    color: var(--white-color);
+}
+.linkButton.blue:hover {
+  background: var(--fb-light);
+  color: var(--white-color);
+}
+.twitter {
+    background: var(--twitter-dark);
+    color: var(--white-color);
+}
+.linkButton.twitter:hover {
+  background: var(--twitter-light);
+  color: var(--white-color);
+}

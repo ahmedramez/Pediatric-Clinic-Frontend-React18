@@ -1,0 +1,196 @@
+*::selection {
+  background-color: #c7c9ca;
+}
+.box {
+    margin: auto;
+    height: 100vh;
+    padding: 80px 40px;
+    background-color: #ecf0f3;
+    box-shadow: -8px -8px 8px #feffff, 8px 8px 8px #161b1d2f;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box label {
+  font-weight: 500;
+  color: #858686;
+}
+.form{
+    margin: auto;
+}
+.box .inputBox {
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  padding-right: 20px;
+  border: none;
+  color: #858686;
+  margin-top: 10px;
+  background-color: #ecf0f3;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 5px #cbced1, inset -5px -5px 5px #ffffff;
+}
+
+.box .inputBox::placeholder {
+  color: #9ea0a0;
+}
+
+.forget {
+  margin-top: 15px;
+  position: relative;
+}
+
+.forget .fg {
+  position: absolute;
+  left: 0px;
+}
+
+.forget .fg a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #8f8c8c;
+  line-height: 24px;
+}
+
+.forget .fg:hover {
+  text-decoration: underline;
+}
+
+.forget .checkboxLabel {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.labelText {
+  color: #8f8c8c;
+  display: inline-block;
+  position: absolute;
+  font-weight: 500;
+  right: 12%;
+  font-size: 13px;
+}
+
+.forget .checkboxLabel input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkboxLabel .checkboxCustom {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  height: 20px;
+  width: 20px;
+  background-color: #ecf0f3;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 3px 3px 3px #cbced1, inset -3px -3px 3px #ffff;
+}
+
+.checkboxLabel input:checked ~ .checkboxCustom {
+  background-color: #ecf0f3;
+  border-radius: 5px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  border: none;
+  box-shadow: -4px -4px 4px #feffff, 4px 4px 4px #161b1d2f;
+}
+
+.checkboxLabel .checkboxCustom::after {
+  position: absolute;
+  content: "";
+  left: 10px;
+  top: 10px;
+  height: 0px;
+  width: 0px;
+  border-radius: 5px;
+  border: solid #635f5f;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(0deg) scale(0);
+  -ms-transform: rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.checkboxLabel input:checked ~ .checkboxCustom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  left: 7px;
+  top: 3px;
+  width: 4px;
+  height: 8px;
+  border: solid #635f5f;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.loginButton {
+  width: 100%;
+  margin-top: 50px;
+  height: 38px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: #727171;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: -5px -5px 8px #d8e2e6, 5px 5px 10px #2c313378;
+  transition: 0.8s;
+}
+
+.loginButton:hover {
+  background-color: #535658;
+  box-shadow: inset 5px 5px 10px #05050578, inset -5px -5px 10px #9e9c9c;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.boxRadius {
+  border-radius: 50%;
+  width: 40px;
+  display: block;
+  height: 40px;
+  margin: 6px;
+  background-color: #ecf0f3;
+  box-shadow: 5px 5px 6px #0d275023, -5px -5px 6px #ffffff;
+  padding: 11px;
+  cursor: pointer;
+}
+
+.boxRadius:hover {
+  box-shadow: inset 5px 5px 5px #cbced1, inset -5px -5px 5px #ffffff;
+}
+
+.boxRadius img {
+  width: 18px;
+  margin: auto;
+  height: 18px;
+}
+
+.option {
+  display: block;
+  margin-top: 35px;
+  color: #6c6d6d;
+  text-align: center;
+}
+#footer-portal {
+  display: none;
+}

@@ -1,0 +1,18 @@
+.prescriptionPaper {
+  width: 5.83in;
+  height: 8.27in;
+  margin-left: auto !important;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Times New Roman', Times, serif;
+}
+.prescriptionPaperBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 auto!important;
+  padding-left: 3rem!important;
+  padding-top: 3rem!important;
+}

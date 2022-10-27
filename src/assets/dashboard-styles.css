@@ -1,0 +1,82 @@
+:root {
+  --main-identity-color: #bb0102;
+  --g-plus-dark: #cc324b;
+  --g-plus-light: #e64c65;
+  --blue-dark: #1f253d;
+  --blue-light: #394264;
+  --grey-dark: #50597b;
+  --grey-light: #9099b7;
+  --fb-dark: #1a4e95;
+  --fb-light: #3468af;
+  --twitter-dark: #35aadc;
+  --twitter-light: #4fc4f6;
+  --green-light: #11a8ab;
+  --green-dark: #0f9295;
+  --yellow: #fcb150;
+  --yellow-light:#f7bd71;
+  --white-color: #fff;
+  --blue-bootstrap: #0d6efd;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.dashboard-pages-container {
+  background-color: var(--blue-dark);
+}
+.dashboard-page-size {
+  width: 960px;
+  height: 100vh;
+  overflow: scroll;
+  padding-top: 17px;
+}
+.dashboard-page-size::-webkit-scrollbar {
+  display: none;
+}
+.bg-blue-light {
+  background-color: var(--blue-light);
+}
+.bg-blue-dark {
+  background-color: var(--blue-darl);
+}
+
+/* scrollbar design */
+
+.scrollbar-style1::-webkit-scrollbar-track,
+.scrollbar-blue::-webkit-scrollbar-track,
+.scrollbar-style2::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--blue-dark);
+  border-radius: 10px;
+}
+.scrollbar-style1::-webkit-scrollbar,
+.scrollbar-blue::-webkit-scrollbar,
+.scrollbar-style2::-webkit-scrollbar {
+  width: 1px;
+  height: 0px;
+  background-color: var(--grey-dark);
+}
+.scrollbar-style1::-webkit-scrollbar-thumb,
+.scrollbar-blue::-webkit-scrollbar-thumb,
+.scrollbar-style2::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+/* style-1 */
+.scrollbar-style1::-webkit-scrollbar-thumb {
+  background-color: var(--green-light);
+}
+/* style-2 */
+.scrollbar-style2::-webkit-scrollbar-thumb {
+  background-color: var(--g-plus-light);
+}
+.scrollbar-blue::-webkit-scrollbar-thumb {
+  background-color: var(--twitter-light);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}

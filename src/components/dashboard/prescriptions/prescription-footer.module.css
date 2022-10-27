@@ -1,0 +1,5 @@
+.prescriptionFooter {
+  height: 1.3in;
+  border-top: 3px solid var(--g-plus-dark);
+  padding: 12px;
+}

@@ -1,0 +1,40 @@
+.fileCard {
+  border: 3px solid var(--blue-light);
+  height: 60px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--blue-dark);
+}
+.fileCard:hover {
+  height: 120px;
+  background-color: var(--blue-light);
+}
+.fileCardTitle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  color: var(--white-color);
+  padding-right: 15%;
+  margin-right: auto;
+}
+.cardIcon {
+  position: absolute;
+  top: 9px;
+  right: 20px;
+  fill: var(--green-light);
+}
+.fileCardAction {
+  height: 0px;
+  visibility: hidden;
+  transition: height 0.6s ease-in-out;
+}
+.fileCard:hover .fileCardAction {
+  visibility: visible;
+  height: 60px;
+}

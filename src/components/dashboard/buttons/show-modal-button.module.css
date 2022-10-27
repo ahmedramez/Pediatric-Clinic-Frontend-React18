@@ -1,0 +1,53 @@
+.showModalButton {
+  /* border-radius: 2rem; */
+  border: none;
+  font-weight: bold;
+  display: block;
+  width: 175px;
+  text-align: center;
+  line-height: 50px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.green {
+  background: var(--green-dark);
+  color: var(--white-color);
+}
+.showModalButton.green:hover {
+  background: var(--green-light);
+  color: var(--white-color);
+}
+.red {
+  background: var(--g-plus-dark);
+  color: var(--white-color);
+}
+.showModalButton.red:hover {
+  background: var(--g-plus-light);
+  color: var(--white-color);
+}
+.yellow {
+  background: var(--yellow);
+  color: var(--white-color);
+}
+.showModalButton.yellow:hover {
+  background: var(--yellow-light);
+  color: var(--white-color);
+}
+.blue {
+  background: var(--fb-dark);
+  color: var(--white-color);
+}
+.showModalButton.blue:hover {
+  background: var(--fb-light);
+  color: var(--white-color);
+}
+.twitter {
+  background: var(--twitter-dark);
+  color: var(--white-color);
+}
+.showModalButton.twitter:hover {
+  background: var(--twitter-light);
+  color: var(--white-color);
+}

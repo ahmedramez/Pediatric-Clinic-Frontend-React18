@@ -1,0 +1,43 @@
+.prescriptionHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 1.5in;
+  color: black;
+  position: relative;
+  margin: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 8px;
+  padding-bottom: 1px;
+  border-bottom: 3px solid var(--g-plus-dark);
+}
+.prescriptionHeader .rightSection {
+  flex: 5;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center !important;
+}
+.prescriptionHeader .middleSection {
+  flex: 4;
+  text-align: center !important;
+  padding: 0px;
+}
+.prescriptionHeader .leftSection {
+  flex: 5;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: left !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.prescriptionHeader .imageContainer {
+  left: 2.2in;
+  max-height: 1.3in;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 22.6%;
+}

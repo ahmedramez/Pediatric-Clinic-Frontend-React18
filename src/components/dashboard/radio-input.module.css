@@ -1,0 +1,32 @@
+.radio input {
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid var(--blue-dark);
+
+    background: var(--grey-dark);
+    color: var(--white-color);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transition: all 100ms linear;
+}
+
+    .radio input:checked {
+        background-color: var(--green-light);
+        color: #fff;
+        box-shadow: 0 1px 1px #0000002e;
+        text-shadow: 0 1px 0px #79485f7a;
+    }
+
+    .radio input:before {
+        content: attr(label);
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }

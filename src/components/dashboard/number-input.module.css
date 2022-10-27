@@ -1,0 +1,28 @@
+.numberInputStyle{
+    height: 50px;
+    background: var(--grey-dark);
+    color: #9aafff;
+    border: 1px solid var(--blue-dark);
+}
+.numberInputStyle::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+.numberInputStyle:focus {
+    outline: none;
+    font-size: 1.2rem;
+    color: white;
+    background: var(--grey-dark);
+    border-color: #9c95ff;
+    box-shadow: none;
+}
+.label {
+    color: #c8f3c1;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+

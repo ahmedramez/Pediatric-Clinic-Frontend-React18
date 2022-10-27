@@ -1,0 +1,162 @@
+:root {
+  --red: #e64c65;
+  --green: #11a8ab;
+  --yellow: #fcb150;
+  --black: #1f253d;
+  --grey: #50597b;
+}
+
+.text-red-active {
+  color: #e64c65 !important;
+}
+.text-green-active {
+  color: #11a8ab !important;
+}
+.text-yellow-active {
+  color: #fcb150 !important;
+}
+.bg-grey-active {
+  background-color: #50597b !important;
+}
+
+@font-face {
+  /* Import our font from file */
+  font-family: hacen;
+  src: url(../../../public/HacenSaudiArabia.ttf);
+}
+.doctor-profile-container {
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.doctor-profile {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Image */
+.doctor-profile-picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-to-home {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.doctor-profile-picture {
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  border: 5px solid var(--grey);
+  border-radius: 50%;
+  margin-top: 50px;
+  animation: scale-up-center 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.doctor-profile-picture img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ***************************************** */
+
+.doctor-profile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctor-profile-title h3,
+.doctor-profile-title p {
+  text-align: center;
+  margin: 0px;
+}
+
+.doctor-profile-title h3 {
+  color: #fff;
+  font-family: hacen;
+}
+
+.doctor-profile-title p {
+  color: #9099b7;
+} /* ***************************************** */
+.doctor-profile-pane {
+  height: 50vh;
+}
+.pane-tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+}
+.first-pane-tab,
+.second-pane-tab,
+.third-pane-tab {
+  flex-grow: 1;
+}
+
+.first-pane-tab {
+  border-top: 3px solid var(--yellow);
+}
+.second-pane-tab {
+  border-top: 3px solid var(--green);
+}
+.third-pane-tab {
+  border-top: 3px solid var(--red);
+}
+.tabs-content {
+  background-color: var(--grey);
+  height: 100%;
+}
+.first-content {
+  color: var(--yellow);
+  font-size: 1.2rem;
+}
+.second-content {
+  color: var(--green);
+  font-size: 1.2rem;
+}
+.third-content {
+  color: var(--red);
+  font-size: 1.2rem;
+}

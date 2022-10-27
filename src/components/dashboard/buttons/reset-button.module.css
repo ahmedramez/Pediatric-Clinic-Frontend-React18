@@ -1,0 +1,17 @@
+.resetButton{
+    background: var(--blue-dark);
+    color: var(--twitter-light);
+    /* border-radius: 2rem; */
+    border: none;
+    font-weight: bold;
+    display: block;
+    width: 175px;
+    line-height: 50px;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+.resetButton:hover {
+    background: var(--g-plus-dark);
+    color: var(--white-color);
+}

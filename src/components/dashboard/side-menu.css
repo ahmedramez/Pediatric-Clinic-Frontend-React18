@@ -1,0 +1,105 @@
+
+.prescriptions-menu,
+.menu {
+    background-color: var(--blue-light);
+    overflow: hidden;
+}
+.menu {
+    height: 453px;
+}
+.prescriptions-menu{
+    height: 197px;
+}
+
+.menu .menu-header {
+    line-height: 75px;
+    color: var(--white-color);
+    background-color: var(--green-light);
+}
+.prescriptions-menu .menu-header {
+    line-height: 75px;
+    color: var(--white-color);
+    background-color: var(--g-plus-light);
+}
+.menu-header svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--white-color);
+}
+
+.prescriptions-menu .menu-items{
+    height: 122px;
+}
+.menu-items {
+    height: 378px;
+    overflow-y: scroll;
+}
+
+.menu .menu-items ul,
+.prescriptions-menu .menu-items ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu .menu-items ul li,
+.prescriptions-menu .menu-items ul li {
+    position: relative;
+    line-height: 60px;
+    border-bottom: 1px solid var(--blue-dark);
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+}
+
+.menu .menu-items ul li:hover,
+.prescriptions-menu .menu-items ul li:hover {
+    background: var(--grey-dark);
+    border-top: 1px solid var(--blue-dark);
+    text-decoration: none;
+}
+
+.menu-item a {
+  
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+.menu-item a svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--grey-light);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu .menu-items ul li:hover a svg,
+.prescriptions-menu .menu-items ul li:hover a svg {
+    fill: var(--g-plus-light);
+}
+.prescriptions-menu-time {
+    width: 82px;
+    line-height: 23px;
+    background: var(--grey-dark);
+    border-radius: 15px;
+    top: 15px;
+    left: 15px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.menu-item__count {
+    width: 36px;
+    line-height: 22px;
+    background: var(--grey-dark);
+    border-radius: 15px;
+    top: 15px;
+    left: 15px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.menu .menu-items ul li:hover a span,
+.prescriptions-menu .menu-items ul li:hover a span
+{
+    background: var(--g-plus-light);
+}

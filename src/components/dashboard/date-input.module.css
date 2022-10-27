@@ -1,0 +1,52 @@
+.textInputContainer {
+  position: relative;
+  width: 100%;
+}
+.dateInput {
+  font-size: 1rem;
+  height: calc(3.5rem + 2px);
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+  background: var(--grey-dark);
+  color: #9aafff;
+  border: 1px solid var(--blue-dark);
+}
+
+/* ::-webkit-datetime-edit-fields-wrapper { background: silver; } */
+::-webkit-datetime-edit {
+  padding: 1rem;
+}
+::-webkit-datetime-edit-text {
+  color: rgb(199, 239, 201);
+  padding: 0 0.3em;
+}
+::-webkit-datetime-edit-month-field {
+  color: rgb(154, 175, 255);
+}
+::-webkit-datetime-edit-day-field {
+  color: rgb(154, 175, 255);
+}
+::-webkit-datetime-edit-year-field {
+  color: rgb(154, 175, 255);
+}
+::-webkit-inner-spin-button {
+  color: rgb(154, 175, 255);
+}
+/* ::-webkit-calendar-picker-indicator { background: orange; } */
+
+.dateInput:focus {
+  outline: none;
+  font-size: 1.2rem;
+  color: white;
+  background: var(--grey-dark);
+  border-color: #9c95ff;
+  box-shadow: none;
+}
+.label {
+  position: absolute;
+  top: 23%;
+  right: 12%;
+  color: #c8f3c1;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,10 @@
+.prescriptionSideDetailContainer {
+  box-shadow: 0 0 11px 2px #d0d0e7;
+}
+.prescriptionEditLink,
+.prescriptionLabStudyLink,
+.prescriptionImagingLink,
+.prescriptionDeleteBtn{
+color: red;
+}
+

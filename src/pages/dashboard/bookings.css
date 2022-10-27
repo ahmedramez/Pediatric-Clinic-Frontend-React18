@@ -1,0 +1,50 @@
+.book-item {
+  line-height: 85px !important;
+}
+.book-footer {
+  position: absolute;
+  top: 56%;
+  right: 22%;
+  font-size: 1rem;
+  color: #ff9000;
+  max-height: 2rem;
+  line-height: 2rem;
+}
+.book-item-form {
+  z-index: 3;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: var(--grey-dark);
+  top: 14px;
+  left: 15px;
+  border-radius: 7px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.menu .menu-items ul li:hover form {
+  background-color: #fff;
+}
+.book-item-button {
+  margin: auto;
+  width: 42px;
+  line-height: 22px;
+  background: transparent;
+  border: none;
+  top: 32px;
+  left: 15px;
+  /*    -webkit-transition: all .3s;
+    transition: all .3s;
+*/
+}
+.menu .book-header {
+  line-height: 75px;
+  color: var(--white-color);
+  background-color: var(--green-light);
+}
+.menu .book-header svg {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  fill: #fff;
+}

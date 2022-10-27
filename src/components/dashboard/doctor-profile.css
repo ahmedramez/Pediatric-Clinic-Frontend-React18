@@ -1,0 +1,69 @@
+.profile {
+    height: 453px;
+    /* width: 300px; */
+    background-color: var(--blue-light);
+}
+
+.profile .image-container {
+    padding-top: 50px;
+}
+
+.profile .image-container img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--grey-dark);
+}
+.profile .text-container h1 {
+    color: var(--white-color);
+    font-family: hacen;
+}
+
+.profile .text-container p {
+    width: 210px;
+    color: var(--grey-light);
+}
+
+.profile-buttons-container .profile-button{
+    color: var(--white-color);
+
+}
+.profile-buttons-container .profile-button:hover {
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+    background: var(--grey-dark);
+}
+
+.profile-buttons-container .profile-button-first {
+    border-top: 3px solid var(--g-plus-light);
+    border-left: 1px solid var(--blue-dark);
+}
+
+    .profile-buttons-container .profile-button-first:hover .profile-button-svg {
+        fill: var(--g-plus-light);
+    }
+
+.profile-buttons-container .profile-button-second {
+    border-top: 3px solid var(--green-light);
+    border-left: 1px solid var(--blue-dark);
+}
+
+.profile-buttons-container .profile-button-second:hover .profile-button-svg {
+    fill: var(--green-light);
+}
+
+.profile-buttons-container .profile-button-third {
+    border-top: 3px solid var(--yellow);
+}
+
+.profile-buttons-container .profile-button-third:hover .profile-button-svg
+{
+    fill: var(--yellow);
+}
+
+.profile-button-svg {
+    fill: var(--grey-light);
+    width: 25px;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
