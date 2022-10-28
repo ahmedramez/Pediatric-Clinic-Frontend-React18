@@ -5,11 +5,11 @@ let listeners = [];
 let actions = {};
 
 //-_-Generic Store
-export const useStore = () => {
+export const useStore = (shouldListen = true) => {
   const setState = useState(globalState)[1];
-
-  const dispatch = (actionIdentifier, payload = {}) => {
+  const dispatch = async(actionIdentifier, payload = {}) => {
     //run this action
+    //the action should return the new state
     const newState = actions[actionIdentifier](globalState, payload);
     globalState = { ...globalState, ...newState };
     //inform all listeners with the state changes
@@ -20,13 +20,16 @@ export const useStore = () => {
 
   useEffect(() => {
     //add component to listeners when it is mounted
-    listeners.push(setState);
-
+    if (shouldListen) {
+      listeners.push(setState);
+    }
     return () => {
       //remove component from listeners when it is unmounted
-      listeners = listeners.filter((listener) => listener !== setState);
+      if (shouldListen) {
+        listeners = listeners.filter((listener) => listener !== setState);
+      }
     };
-  }, [setState]);
+  }, [setState, shouldListen]);
 
   return [globalState, dispatch];
 };

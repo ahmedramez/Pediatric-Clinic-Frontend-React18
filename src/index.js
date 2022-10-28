@@ -4,8 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 //
-import configureUsersStore from "./hooks-store/users-store";
-configureUsersStore();
+import configureAccountsStore from "./hooks-store/accounts-store";
+configureAccountsStore();
 //
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
+import { useStore } from "../../../hooks-store/store";
 
 const Navbar = () => {
   const navbarTogglerRef = useRef();
@@ -7,6 +8,21 @@ const Navbar = () => {
     // Collapse Navbar
     navbarTogglerRef.current.click();
   };
+
+  const state = useStore(true)[0];
+
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <nav className="navbar navbar-expand-lg p-0 site-nav">
       <div className="container-fluid">
@@ -78,7 +94,7 @@ const Navbar = () => {
                 عن الدكتورة
               </NavLink>
             </li>
-            <li className="nav-item site-nav-item">
+           {!(state.login.isLoggedIn) && <li className="nav-item site-nav-item">
               <NavLink
                 to="/Login"
                 onClick={navlinlClickHandler}
@@ -86,8 +102,8 @@ const Navbar = () => {
               >
                 دخول
               </NavLink>
-            </li>
-            <li className="nav-item site-nav-item">
+            </li>}
+            {(state.login.isLoggedIn) &&(state.login.role==="Doctor") &&<li className="nav-item site-nav-item">
               <NavLink
                 to="/Dashboard"
                 onClick={navlinlClickHandler}
@@ -95,7 +111,7 @@ const Navbar = () => {
               >
                 Dashboard
               </NavLink>
-            </li>
+            </li>}
           </ul>
         </div>
       </div>

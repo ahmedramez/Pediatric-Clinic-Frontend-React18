@@ -6,7 +6,7 @@ import ArticlesSection from "../../components/home-page/articles-section";
 import SendMessage from "../../components/home-page/send-message";
 
 const Home = () => {
-
+  // console.log(localStorage.getItem("token") === null);
   document.title = "الرئيسية";
   useEffect(() => {
     // scroll to top on page load
