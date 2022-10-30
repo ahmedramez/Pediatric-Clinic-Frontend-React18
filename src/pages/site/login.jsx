@@ -118,7 +118,13 @@ const Login = () => {
       );
       if (response.status === 200) {
         const result = await response.json();
-        dispatch("SET_LOGGED_IN", result);
+        if (result.token && result.role) {
+          dispatch("SET_LOGGED_IN", result);
+        } else {
+          alert("Failed logging to server");
+        }
+      } else {
+        alert(`server response not ok: ${response.status}`);
       }
       setIsLoading(false);
     }
@@ -126,13 +132,14 @@ const Login = () => {
   };
 
   useEffect(() => {
-    if (state.login.isLoggedIn) {
-      if (state.login.role === "Doctor") {
-        navigate("/Dashboard");
-      }
-      if (state.login.role !== "Doctor") {
-        navigate("/");
-      }
+    if (state.login.isLoggedIn && state.login.role === "Doctor") {
+      navigate("/Dashboard");
+    }
+    if (
+      state.login.isLoggedIn &&
+      (state.login.role == "Secretary" || state.login.role == "Patient")
+    ) {
+      navigate("/");
     }
   }, [navigate, state.login.isLoggedIn, state.login.role]);
   return (

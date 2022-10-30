@@ -11,7 +11,7 @@ const configureAccountsStore = () => {
         globalState.login.lastName = loginResule.lastName;
         globalState.login.role = loginResule.role;
         globalState.login.isLoggedIn=true
-        localStorage.setItem("token", loginResule.token);
+        localStorage.setItem("token", `Bearer ${loginResule.token}`);
         localStorage.setItem("role", loginResule.role);
         return globalState;
     },
