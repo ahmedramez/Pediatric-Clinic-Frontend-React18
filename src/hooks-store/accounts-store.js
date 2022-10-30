@@ -3,7 +3,7 @@ import { initStore } from "./store";
 //"https://localhost:7289/api/Login"
 const configureAccountsStore = () => {
   const actions = {
-    SET_LOGGED_IN: async (globalState, loginResule = {}) => {
+    SET_LOGGED_IN: (globalState, loginResule = {}) => {
       // console.log("loginResule",loginResule)
         globalState.login.token = loginResule.token;
         globalState.login.firstName = loginResule.firstName;
@@ -15,6 +15,17 @@ const configureAccountsStore = () => {
         localStorage.setItem("role", loginResule.role);
         return globalState;
     },
+    LOGOUT:(globalState)=>{
+      globalState.login.token = null;
+      globalState.login.firstName = null;
+      globalState.login.middleName = null;
+      globalState.login.lastName = null;
+      globalState.login.role = null;
+      globalState.login.isLoggedIn=false;
+      localStorage.removeItem("token");
+      localStorage.removeItem("role");
+      return globalState;
+    }
   };
 
   initStore(actions, {

@@ -3,25 +3,12 @@ import { NavLink } from "react-router-dom";
 import { useStore } from "../../../hooks-store/store";
 
 const Navbar = () => {
+  const [state, dispatch] = useStore(true);
   const navbarTogglerRef = useRef();
   const navlinlClickHandler = () => {
     // Collapse Navbar
     navbarTogglerRef.current.click();
   };
-
-  const state = useStore(true)[0];
-
-
-
-
-
-
-
-
-
-
-
-
 
   return (
     <nav className="navbar navbar-expand-lg p-0 site-nav">
@@ -94,24 +81,68 @@ const Navbar = () => {
                 عن الدكتورة
               </NavLink>
             </li>
-           {!(state.login.isLoggedIn) && <li className="nav-item site-nav-item">
-              <NavLink
-                to="/Login"
-                onClick={navlinlClickHandler}
-                className="nav-link fw-bold"
-              >
-                دخول
-              </NavLink>
-            </li>}
-            {(state.login.isLoggedIn) &&(state.login.role==="Doctor") &&<li className="nav-item site-nav-item">
-              <NavLink
-                to="/Dashboard"
-                onClick={navlinlClickHandler}
-                className="nav-link fw-bold"
-              >
-                Dashboard
-              </NavLink>
-            </li>}
+            {!state.login.isLoggedIn && (
+              <li className="nav-item site-nav-item">
+                <NavLink
+                  to="/Login"
+                  onClick={navlinlClickHandler}
+                  className="nav-link fw-bold"
+                >
+                  دخول
+                </NavLink>
+              </li>
+            )}
+            {state.login.isLoggedIn && (
+              <li className="nav-item site-nav-item">
+                <div className="dropdown-center">
+                  <a
+                    className="nav-link fw-bold"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    خيارات
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="nav-link fw-bold" href="#">
+                        لوحة التحكم
+                      </a>
+                    </li>
+                    <li>
+                      <a className="nav-link fw-bold" href="#">
+                        البروفايل
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        onClick={() => {
+                          dispatch("LOGOUT");
+                          navlinlClickHandler();
+                        }}
+                        className="nav-link fw-bold"
+                        style={{ color: "red" }}
+                        href="#"
+                      >
+                        خروج
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            )}
+            {state.login.isLoggedIn && state.login.role === "Doctor" && (
+              <li className="nav-item site-nav-item">
+                <NavLink
+                  to="/Dashboard"
+                  onClick={navlinlClickHandler}
+                  className="nav-link fw-bold"
+                >
+                  Dashboard
+                </NavLink>
+              </li>
+            )}
           </ul>
         </div>
       </div>

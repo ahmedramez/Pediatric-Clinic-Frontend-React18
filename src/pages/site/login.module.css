@@ -2,22 +2,22 @@
   background-color: #c7c9ca;
 }
 .box {
-    margin: auto;
-    height: 100vh;
-    padding: 80px 40px;
-    background-color: #ecf0f3;
-    box-shadow: -8px -8px 8px #feffff, 8px 8px 8px #161b1d2f;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  margin: auto;
+  height: 100vh;
+  padding: 80px 40px;
+  background-color: #ecf0f3;
+  box-shadow: -8px -8px 8px #feffff, 8px 8px 8px #161b1d2f;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .box label {
   font-weight: 500;
   color: #858686;
 }
-.form{
-    margin: auto;
+.form {
+  margin: auto;
 }
 .box .inputBox {
   text-align: center;
@@ -193,4 +193,20 @@
 }
 #footer-portal {
   display: none;
+}
+.invalid {
+  color: red;
+}
+/* iPad */
+@media screen and (min-width: 720px) {
+  .box {
+    padding: 67px 180px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 62rem) {
+  .box {
+    padding: 67px 30%;
+  }
 }
