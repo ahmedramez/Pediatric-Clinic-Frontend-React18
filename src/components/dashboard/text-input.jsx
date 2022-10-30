@@ -1,5 +1,12 @@
 import styles from "./text-input.module.css";
-const TextInput = ({ required=false,placeholder, name, value, id=null }) => {
+const TextInput = ({
+  required = false,
+  onChangeHandler = null,
+  placeholder,
+  name,
+  value,
+  id = null,
+}) => {
   return (
     <div className="form-floating">
       <input
@@ -10,8 +17,11 @@ const TextInput = ({ required=false,placeholder, name, value, id=null }) => {
         required={required}
         placeholder={placeholder}
         value={value}
+        onChange={onChangeHandler}
       />
-      <label className={styles.label} htmlFor={name}>{placeholder}</label>
+      <label className={styles.label} htmlFor={name}>
+        {placeholder}
+      </label>
     </div>
   );
 };

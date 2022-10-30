@@ -1,5 +1,5 @@
 .radio input {
-    height: 50px;
+    height: calc(3.5rem + 2px);
     line-height: 50px;
     width: 100%;
     -webkit-appearance: none;

@@ -105,11 +105,17 @@ const Navbar = () => {
                     خيارات
                   </a>
                   <ul className="dropdown-menu">
-                    <li>
-                      <a className="nav-link fw-bold" href="#">
-                        لوحة التحكم
-                      </a>
-                    </li>
+                    {state.login.isLoggedIn && state.login.role === "Doctor" && (
+                      <li className="nav-item site-nav-item">
+                        <NavLink
+                          to="/Dashboard"
+                          onClick={navlinlClickHandler}
+                          className="nav-link fw-bold"
+                        >
+                          الإدارة
+                        </NavLink>
+                      </li>
+                    )}
                     <li>
                       <a className="nav-link fw-bold" href="#">
                         البروفايل
@@ -130,17 +136,6 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
-              </li>
-            )}
-            {state.login.isLoggedIn && state.login.role === "Doctor" && (
-              <li className="nav-item site-nav-item">
-                <NavLink
-                  to="/Dashboard"
-                  onClick={navlinlClickHandler}
-                  className="nav-link fw-bold"
-                >
-                  Dashboard
-                </NavLink>
               </li>
             )}
           </ul>
