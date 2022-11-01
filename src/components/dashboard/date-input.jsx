@@ -1,8 +1,15 @@
 import styles from "./date-input.module.css";
-const DateInput = ({ title, name, value, id = null }) => {
+const DateInput = ({
+  title,
+  onChangeHandler = null,
+  name,
+  value,
+  id = null,
+}) => {
   return (
     <div className={styles.textInputContainer}>
       <input
+        onChange={onChangeHandler}
         className={`form-control form-control-lg ${styles.dateInput}`}
         type="date"
         name={name}

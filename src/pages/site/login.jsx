@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import LoadindSpiner from "../../components/home-page/site-loading-spinner";
 import { useStore } from "../../hooks-store/store";
@@ -56,13 +56,13 @@ const Login = () => {
         if (isNaN(character * 1)) {
           //is UPPER CASE
           if (
-            character == character.toUpperCase() &&
-            character.toLowerCase() != character
+            character === character.toUpperCase() &&
+            character.toLowerCase() !== character
           ) {
             hasUpperCaseChar = true;
           }
           //is lower case
-          if (character == character.toLowerCase()) {
+          if (character === character.toLowerCase()) {
             hasLowerCaseChar = true;
           }
         }
@@ -137,7 +137,7 @@ const Login = () => {
     }
     if (
       state.login.isLoggedIn &&
-      (state.login.role == "Secretary" || state.login.role == "Patient")
+      (state.login.role === "Secretary" || state.login.role === "Patient")
     ) {
       navigate("/");
     }
