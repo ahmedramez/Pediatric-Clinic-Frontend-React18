@@ -47,18 +47,6 @@ const SideMenu = () => {
               </NavLink>
             </li>
             <li className="menu-item">
-              <NavLink to="Vaccines" className="text-decoration-none d-block">
-                <svg viewBox="0 0 16 16">
-                  <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
-                </svg>
-                اللقاحات
-                <span className="menu-item__count position-absolute text-center">
-                  8
-                </span>
-              </NavLink>
-            </li>
-
-            <li className="menu-item">
               <NavLink to="Purchases" className="text-decoration-none d-block">
                 <svg viewBox="0 0 16 16">
                   <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
@@ -118,62 +106,6 @@ const SideMenu = () => {
                 </span>
               </NavLink>
             </li>
-            <li className="menu-item">
-              <NavLink to="/" className="text-decoration-none d-block">
-                <svg viewBox="0 0 16 16">
-                  <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
-                </svg>
-                Slider
-                <span className="menu-item__count position-absolute text-center">
-                  8
-                </span>
-              </NavLink>
-            </li>
-            <li className="menu-item">
-              <NavLink to="/" className="text-decoration-none d-block">
-                <svg viewBox="0 0 16 16">
-                  <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
-                </svg>{" "}
-                الخدمات
-                <span className="menu-item__count position-absolute text-center">
-                  8
-                </span>
-              </NavLink>
-            </li>
-            <li className="menu-item">
-              <NavLink to="/" className="text-decoration-none d-block">
-                <svg viewBox="0 0 16 16">
-                  <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
-                </svg>
-                الأخبار
-                <span className="menu-item__count position-absolute text-center">
-                  8
-                </span>
-              </NavLink>
-            </li>
-            <li className="menu-item">
-              <NavLink to="/" className="text-decoration-none d-block">
-                <svg viewBox="0 0 16 16">
-                  <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
-                </svg>
-                المقالات
-                <span className="menu-item__count position-absolute text-center">
-                  8
-                </span>
-              </NavLink>
-            </li>
-            <li className="menu-item">
-              <NavLink to="/" className="text-decoration-none d-block">
-                <svg viewBox="0 0 16 16">
-                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                </svg>
-                التطعيمات
-                <span className="menu-item__count position-absolute text-center">
-                  8
-                </span>
-              </NavLink>
-            </li>
-
             <li className="menu-item">
               <NavLink
                 to="/"

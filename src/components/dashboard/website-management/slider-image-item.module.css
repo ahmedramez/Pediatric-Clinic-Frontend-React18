@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+}
+.deleteButton {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: white;
+}
+.deleteButton svg {
+    width: 24px;
+    height: 24px;
+    fill: red;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}

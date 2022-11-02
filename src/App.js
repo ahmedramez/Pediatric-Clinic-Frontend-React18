@@ -83,18 +83,9 @@ function App() {
             {displayDashboard && (
               <Route path="/Dashboard/*" element={<DashboardLayout />}>
                 <Route path="*" element={<Dashboard />} />
-                <Route
-                  path="Prescriptions/:fileId"
-                  element={<ViewAllFilePrescriptions />}
-                />
-                <Route
-                  path="New-Prescription/:fileId"
-                  element={<NewPrescription />}
-                />
-                <Route
-                  path="Website-Management"
-                  element={<WebsiteManagement />}
-                >
+                <Route path="Prescriptions/:fileId" element={<ViewAllFilePrescriptions />}/>
+                <Route path="New-Prescription/:fileId" element={<NewPrescription />}/>
+                <Route path="Website-Management/*" element={<WebsiteManagement />}>
                   <Route path="Name-and-Logo" element={<NameAndLogoMgmt />} />
                   <Route path="Slideshow" element={<Slideshow />} />
                   <Route path="Services" element={<ServicesMgmt />} />
@@ -104,10 +95,7 @@ function App() {
                 </Route>
               </Route>
             )}
-            <Route
-              path="/Dashboard/Print-Prescription"
-              element={<PrintPrescription />}
-            />
+            <Route path="/Dashboard/Print-Prescription" element={<PrintPrescription />}/>
           </Route>
         )
       )}

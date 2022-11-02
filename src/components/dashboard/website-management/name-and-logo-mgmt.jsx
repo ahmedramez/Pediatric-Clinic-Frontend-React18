@@ -1,6 +1,7 @@
 import styles from "./name-and-logo-mgmt.module.css";
 import TextInput from "../text-input";
 import { useEffect, useState } from "react";
+import ButtonGlowOnHover from "../buttons/button-glowOnHover";
 const NameAndLogoMgmt = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [imageUrl, setImageUrl] = useState(null);
@@ -40,9 +41,7 @@ const NameAndLogoMgmt = () => {
             )}
           </div>
           <div className="col-12 my-3">
-            <button className={`${styles.glowOnHover}`} type="button">
-              حفظ
-            </button>
+            <ButtonGlowOnHover text="حفظ"/>
           </div>
         </div>
       </form>

@@ -9,11 +9,11 @@ import RadioInput from "../radio-input";
 import SelectInput from "../select-input";
 import TextInput from "../text-input";
 import TextareaInput from "../textarea-input";
-import { userFile } from "../../../utility/file-model";
+import { userFile } from "../../../models/file-model";
 import { useState } from "react";
 import { validateName } from "../../../utility/create-file-validators";
 import { validateEmail } from "../../../utility/validate-email";
-import { governorates } from "../../../utility/governorates-list";
+import { governorates } from "../../../models/governorates-list";
 import { httpPOST } from "../../../http/httpPOST";
 
 const CreateFileModal = () => {
