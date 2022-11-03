@@ -20,7 +20,7 @@ import NewPrescription from "./pages/dashboard/prescripions/new-prescription";
 import PrintPrescription from "./pages/dashboard/prescripions/print-prescription";
 import WebsiteManagement from "./pages/dashboard/website/website-management";
 import NameAndLogoMgmt from "./components/dashboard/website-management/name-and-logo-mgmt";
-import Slideshow from "./components/dashboard/website-management/slider-mgmt";
+import SliderManagement from "./components/dashboard/website-management/slider-mgmt";
 import ServicesMgmt from "./components/dashboard/website-management/services-mgmt";
 import ArticlesMgmt from "./components/dashboard/website-management/articles-mgmt";
 import NewsMgmt from "./components/dashboard/website-management/news-mgmt";
@@ -87,7 +87,7 @@ function App() {
                 <Route path="New-Prescription/:fileId" element={<NewPrescription />}/>
                 <Route path="Website-Management/*" element={<WebsiteManagement />}>
                   <Route path="Name-and-Logo" element={<NameAndLogoMgmt />} />
-                  <Route path="Slideshow" element={<Slideshow />} />
+                  <Route path="SliderManagement" element={<SliderManagement />} />
                   <Route path="Services" element={<ServicesMgmt />} />
                   <Route path="Articles" element={<ArticlesMgmt />} />
                   <Route path="News" element={<NewsMgmt />} />

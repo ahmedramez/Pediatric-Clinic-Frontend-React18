@@ -1,10 +1,10 @@
 import { initStore } from "./store";
-// import { httpPOST } from "../http/httpPOST";
-//"https://localhost:7289/api/Login"
+
+localStorage.setItem('LOGIN_URL',localStorage.getItem('BASE_URL')+'/Accounts/Login')
+
 const configureAccountsStore = () => {
   const actions = {
     SET_LOGGED_IN: (globalState, loginResule = {}) => {
-      // console.log("loginResule",loginResule)
         globalState.login.token = loginResule.token;
         globalState.login.firstName = loginResule.firstName;
         globalState.login.middleName = loginResule.middleName;

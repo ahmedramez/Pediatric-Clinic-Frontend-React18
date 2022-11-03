@@ -14,7 +14,7 @@ const WebsiteManagementSideMenuOptions = () => {
         <ul>
         <li className={`${styles.menuItem}`}>
             <NavLink
-              to="/Dashboard/Website-Management/Slideshow"
+              to="/Dashboard/Website-Management/SliderManagement"
               className="text-decoration-none d-block"
             >
               <svg viewBox="0 0 16 16">

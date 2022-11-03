@@ -5,7 +5,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 //
 import configureAccountsStore from "./hooks-store/accounts-store";
+import configureSliderImagessStore from "./hooks-store/slider-images-store";
 configureAccountsStore();
+configureSliderImagessStore();
 //
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

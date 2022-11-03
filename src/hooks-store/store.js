@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-
+localStorage.setItem('BASE_URL','https://localhost:7289/api')
+localStorage.setItem('CREATE_PATIENT_FILE_URL','https://localhost:7289/api/Accounts/CreatePatientFile')
 let globalState = {};
 let listeners = [];
 let actions = {};
@@ -8,9 +9,10 @@ let actions = {};
 export const useStore = (shouldListen = true) => {
   const setState = useState(globalState)[1];
   const dispatch = async(actionIdentifier, payload = {}) => {
+    
     //run this action
     //the action should return the new state
-    const newState = actions[actionIdentifier](globalState, payload);
+    const newState =await actions[actionIdentifier](globalState, payload);
     globalState = { ...globalState, ...newState };
     //inform all listeners with the state changes
     for (const listener of listeners) {

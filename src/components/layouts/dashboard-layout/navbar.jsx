@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+
   const navbarTogglerRef = useRef();
   // const navlinlClickHandler = () => {
   //   // Collapse Navbar

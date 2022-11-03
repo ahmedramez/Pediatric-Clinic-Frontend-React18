@@ -109,7 +109,7 @@ const Login = () => {
     if (errors && Object.keys(errors).length === 0 && email && password) {
       setIsLoading(true);
       const response = await httpPOST(
-        "https://localhost:7289/api/Accounts/Login",
+        localStorage.getItem('LOGIN_URL') ,
         {
           email,
           password,
